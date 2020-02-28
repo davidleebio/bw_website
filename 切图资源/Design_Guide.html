@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>包网官网首页重构及动画示意</title>
+    <style type="text/css">
+     body { margin:0; padding:0; font-size:14px; color:#333;}
+     h2 { font-size:20px; font-weight:bold; color:#333;}
+     h3 { font-size:16px; font-weight:bold; color:#333;}
+     .main_title { font-size:40px; font-weight:bold; color:#000; text-align:center; margin-top:100px; margin-bottom:50px;}
+     .content { width:900px; height:auto; margin-left:auto; margin-right:auto;}
+     .content ul li { line-height:30px;}
+     a { color: red;}
+    </style>
+  </head>
+  <body>
+    <div class="main_title">包网官网首页重构及动画示意</div>
+    <div class="content">
+      <h2>【技术说明】</h2>
+      <p>网站兼容高清屏显示，图片及视频使用@1x和@2x资源，图标及logo优先使用SVG格式。</p>
+      <p>所有的交互效果，如鼠标hover，按钮变色，模块消失隐藏等属性均要加上过渡属性，默认 transition：0.3s</p>
+      </br>
+      </br>
+      <h2>【解决方案】</h2>
+      <li>在线字体：使用webfont技术，优先使用“方正兰亭黑、苹方”字体。解决方案使用https://www.webfont.com</li>
+      <li>动画图标：使用图片序列帧Position定位实现可交互动画图标，解决方案参考阿里云官网实现方式。</li>
+      <li></li>
+      </br>
+      </br>
+      <h2>**********首屏**********</h2>
+      <li>视频和图片按照屏幕尺寸大小缩放100%铺满整屏，默认的图片作为背景，以防视频加载慢或加载失败情况的备用。</li>
+      <li>默认有音乐开启，点击关闭动画图标停止音乐关闭，优先使用css代码实现</li>
+      <li>顶部悬浮导航在向下滚动时出现悬浮，然后消失；再向下滚动时不出现悬浮，当上滚动时出现悬浮。参考效果见<a href="https://www.ff.com/us/ff-91/#design">链接</a></li>
+      </br>
+    </div>
+  </body>
+</html>
